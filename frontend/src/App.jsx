@@ -33,13 +33,13 @@ function App() {
       <Navbar/>
         <div className="container">
           <Routes>
-            <Route path='/ReactGram/' element={auth ? <Home/> : <Navigate to='/login'/>}/>
-            <Route path='/ReactGram/profile' element={auth ? <EditProfile/> : <Navigate to='/login'/>}/>
-            <Route path='/ReactGram/users/:id' element={auth ? <Profile/> : <Navigate to='/login'/>}/>
-            <Route path='/ReactGram/login' element={!auth ?<Login/>: <Navigate to ='/'/>}/>
-            <Route path='/ReactGram/register' element={!auth ?<Register/>: <Navigate to ='/'/>}/>
-            <Route path='/ReactGram/search' element={auth ? <Search/> : <Navigate to='/login'/>}/>
-            <Route path='/ReactGram/photos/:id' element={auth ? <Photo/> : <Navigate to='/login'/>}/>
+            <Route path='/' element={auth ? <Home/> : <Navigate to='/login'/>}/>
+            <Route path='profile' element={auth ? <EditProfile/> : <Navigate to='/login'/>}/>
+            <Route path='/users/:id' element={auth ? <Profile/> : <Navigate to='/login'/>}/>
+            <Route path='/login' element={!auth ?<Login/>: <Navigate to ='/'/>}/>
+            <Route path='/register' element={!auth ?<Register/>: <Navigate to ='/'/>}/>
+            <Route path='/search' element={auth ? <Search/> : <Navigate to='/login'/>}/>
+            <Route path='/photos/:id' element={auth ? <Photo/> : <Navigate to='/login'/>}/>
 
           </Routes>
         </div>

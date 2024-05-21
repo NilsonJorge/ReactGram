@@ -8,8 +8,19 @@
 
 .photo-author {
     text-align: left;
+    display: flex;
+    text-align: left;
+    margin-bottom: 1em;
+}
+.photo-author img{
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
 }
 
 .photo-author a {
     font-weight: bold;
+    margin: 1em;
+    text-align: left;
+    display: flex;
 }

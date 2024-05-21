@@ -32,8 +32,17 @@
     margin: 0.3%;
 }
 
+.photo .btn{
+    display: block;
+    margin: auto;
+    margin-top: 1em;
+    text-align: center;
+    width: 80px;
+}
+
 .photo img {
     width: 100%;
+    border-radius: 5px;
 }
 
 .actions {
@@ -42,7 +51,7 @@
     padding: 10px;
 }
 
-.action svg {
+.actions svg {
     cursor: pointer;
 }
 
